@@ -1,0 +1,36 @@
+{
+    "site_root": "",
+    "site_base_url": "127.0.0.1:5000",
+    "db_host": "localhost",
+    "db_user": "",
+    "db_pw": "",
+    "db_name": "",
+    "allowed_video": [
+        "mp4",
+        "ts",
+        "webm",
+        "mkv",
+        "rmvb",
+        "avi",
+        "m2ts",
+        "mov",
+        "mts"
+    ],
+    "debug": false,
+    "testing": false,
+    "ffmpeg_path": "",
+    "ffprobe_path":"",
+    "mediainfo_path": "",
+    "gpuaccle": false,
+    "max_encode": 3,
+    "live": false,
+    "smtp": false,
+    "smtp_config": {
+        "host": "",
+        "port": 587,
+        "account": "",
+        "password": ""
+    },
+    "log_mode": false,
+    "live_chatroom": false
+}
