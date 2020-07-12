@@ -58,7 +58,7 @@ flask run # if you install flask from apt/yum
 python3 app.py # if error occurred
 ```
 ## Deploy in production level (todo)
-
+This repo embedded a WSGI file, you can use it in a reverse proxy server
 
 
 
