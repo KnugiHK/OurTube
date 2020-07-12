@@ -10,6 +10,13 @@ The prototype of this project is completed and being tested heavily now.
 1. Re-encode video as HLS supported format by using GPU acceleration
 
 # Deployment
+## Installation Script
+Download the installation script and execute it
+```shell
+wget -O - <script url (todo)> | bash
+```
+
+## DIY
 ### First, clone this repo.
 ```shell
 git clone https://github.com/KnugiHK/video-streaming.git
