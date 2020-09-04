@@ -1,4 +1,4 @@
-# MyTube
+# OurTube
 A self-hosting streaming website including video streaming and live streaming.
 
 # Development Progress
