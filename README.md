@@ -24,7 +24,7 @@ cd video-streaming
 ```
 ### Then, install dependecies:
 ```shell
-sudo apt-get install python-dev default-libmysqlclient-dev mediainfo ffmpeg #Debian / Ubuntu
+sudo apt-get install python3 python3-pip python-dev default-libmysqlclient-dev mediainfo ffmpeg #Debian / Ubuntu
 sudo yum install python-devel mysql-devel mediainfo ffmpeg # Red Hat / CentOS
 brew install mysql-client mediainfo ffmpeg # macOS (Homebrew)
 ```
