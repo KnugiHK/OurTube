@@ -57,8 +57,27 @@ python3 -m flask run # if you install flask from pip
 flask run # if you install flask from apt/yum
 python3 app.py # if error occurred
 ```
-## Deploy in production level (todo)
+## Deploy in production level
 This repo embedded a WSGI file, you can use it in a reverse proxy server
 
+### Install required packages
+```shell
+sudo apt install nginx
+pip3 install uwsgi
+```
+
+### Setting video-streaming.nginx 
+1. Replace all placeholders in "video-streaming.nginx" and "video-streaming.services"
+2. Copy the file to nginx and create symlink
+```shell
+sudo cp video-streaming.nginx /etc/nginx/site-available/video-streaming
+sudo ln -s /etc/nginx/site-available/video-streaming /etc/nginx/site-enable/video-streaming
+```
+3. Copy service file to systemd and enable the service
+```shell
+sudo cp video-streaming.service /etc/systemd/system/
+sudo systemctl enable video-streaming
+sudo systemctl start video-streaming
+```
 
 
