@@ -48,13 +48,12 @@ CREATE TABLE IF NOT EXISTS `metadata` (
 -- Dumping structure for table stream.users
 CREATE TABLE IF NOT EXISTS `users` (
   `username` varchar(50) NOT NULL,
-  `password` binary(60) NOT NULL DEFAULT '0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0',
+  `password` char(77) NOT NULL DEFAULT '0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0',
   `role` int(1) NOT NULL DEFAULT 0,
   `email` varchar(256) DEFAULT NULL,
   `otp` varchar(50) DEFAULT NULL,
   `locked` bit(1) NOT NULL DEFAULT b'0',
-  PRIMARY KEY (`username`),
-  UNIQUE KEY `email` (`email`)
+  PRIMARY KEY (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- Data exporting was unselected.
@@ -75,5 +74,3 @@ CREATE TABLE IF NOT EXISTS `video` (
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-
-

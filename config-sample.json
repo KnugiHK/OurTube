@@ -32,5 +32,7 @@
         "password": ""
     },
     "log_mode": false,
-    "live_chatroom": false
+    "live_chatroom": false,
+	"captcha_site_key": "",
+    "captcha_secret_key":"" 
 }

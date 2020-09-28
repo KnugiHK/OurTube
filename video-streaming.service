@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance to serve video-streaming
+After=network.target
+
+[Service]
+User=user 
+group=www-data
+WorkingDirectory=<path to site root>/video-streaming
+Environment="<path to uwsgi binary's folder>"
+ExecStart=<path to uwsgi binary> --ini <path to site root>/video-streaming.ini
+
+[Install]
+WantedBy=multi-user.target

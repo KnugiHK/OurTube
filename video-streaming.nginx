@@ -1,0 +1,23 @@
+server {
+    if ($host = exmaple.com) {
+        return 301 https://$host$request_uri;
+    }
+    listen 80;
+    server_name exmaple.com;
+}
+
+server {
+    listen 443 ssl;
+    server_name exmaple.com;
+    #ssl_certificate     <path to cert>;
+    #ssl_certificate_key <path to key>;
+    ssl_protocols       TLSv1.2 TLSv1.3;
+    location / {
+        include uwsgi_params;
+        uwsgi_pass unix:<path to site root>/video-streaming.sock;
+    }
+    location /static/ {
+         alias <path to site root>/static/;
+    }
+    client_max_body_size 10000M;
+}
