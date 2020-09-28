@@ -8,6 +8,7 @@ The prototype of this project is completed and being tested heavily now.
 
 # Feature
 1. Re-encode video as HLS supported format by using GPU acceleration
+2. Keep the video quality
 
 # Deployment
 ## Installation Script
