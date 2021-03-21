@@ -8,7 +8,7 @@ Flask_WTF == 0.14.3
 Flask_Mail == 0.9.1
 Flask-hCaptcha == 0.5.1 
 Flask-CORS
-Jinja2 == 2.10.1
+Jinja2 == 2.11.3
 Werkzeug == 0.16.0
 bcrypt == 3.1.7
 mysqlclient == 1.4.6
